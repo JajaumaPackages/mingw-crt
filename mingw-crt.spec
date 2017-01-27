@@ -9,7 +9,7 @@
 
 Name:           mingw-crt
 Version:        5.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        MinGW Windows cross-compiler runtime
 
 License:        Public Domain and ZPLv2.1
@@ -101,6 +101,9 @@ rm -rf $RPM_BUILD_ROOT%{mingw64_includedir}/*.c
 
 
 %changelog
+* Fri Jan 27 2017 Jajauma's Packages <jajauma@yandex.ru> - 5.0.0-2
+- De-bootstrap build (not sure if needed ...)
+
 * Wed Oct 26 2016 Kalev Lember <klember@redhat.com> - 5.0.0-1
 - Update to 5.0.0
 - Don't set group tags
